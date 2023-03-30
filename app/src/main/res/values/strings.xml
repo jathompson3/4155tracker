@@ -1,16 +1,20 @@
 <resources>
+
+    // universal strings
     <string name="app_name">SecuriChat</string>
     <string name="start_page">Welcome to SecuriChat</string>
     <string name="login_page">Login Page</string>
-    <string name="signup_page">Sign Up Page</string>
-    <string name="login_button">Log In</string>
-    <string name="signup_button">Sign Up</string>
+    <string name="signup">Sign Up</string>
     <string name="back_button">Back</string>
 
-    // sign up page
-    <string name="email">Email Address</string>
+    // login page
+    <string name="login">Log In</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+
+    // sign up page
+    <string name="signup_page">Sign Up Page</string>
+    <string name="email">Email Address</string>
     <string name="confirm_pass">Confirm Password</string>
     <string name="create_account">Create Account</string>
 </resources>

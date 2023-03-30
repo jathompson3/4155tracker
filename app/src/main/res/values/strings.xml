@@ -6,4 +6,11 @@
     <string name="login_button">Log In</string>
     <string name="signup_button">Sign Up</string>
     <string name="back_button">Back</string>
+
+    // sign up page
+    <string name="email">Email Address</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="create_account">Create Account</string>
 </resources>

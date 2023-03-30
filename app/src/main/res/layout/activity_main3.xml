@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="60dp"
         android:text="@string/signup_page"
         android:textSize="24sp"
@@ -29,5 +29,83 @@
         android:layout_marginTop="672dp"
         android:text="@string/back_button"
         tools:layout_editor_absoluteX="158dp" />
+
+    <Button
+        android:id="@+id/create_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/create_account"
+        tools:layout_editor_absoluteX="158dp" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/page3Header"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:autofillHints="username"
+        android:hint="@string/username"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:autofillHints="emailAddress"
+        android:hint="@string/email"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextEmailAddress"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:autofillHints="password"
+        android:hint="@string/password"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:autofillHints="confirm password"
+        android:hint="@string/confirm_pass"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
 
 </RelativeLayout>

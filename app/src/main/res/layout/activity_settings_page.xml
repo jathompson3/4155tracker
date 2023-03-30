@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsPage"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/SettingsPageHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/settings"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SettingsPageHeader"
+        android:layout_marginTop="570dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/back_button"
+        tools:layout_editor_absoluteX="158dp" />
+
+    <Button
+        android:id="@+id/confirm_changes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/confirm_changes"
+        tools:layout_editor_absoluteX="158dp" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/SettingsPageHeader"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:autofillHints="username"
+        android:hint="@string/edit_username"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:autofillHints="emailAddress"
+        android:hint="@string/edit_email"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextEmailAddress"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:autofillHints="password"
+        android:hint="@string/edit_password"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:autofillHints="confirm password"
+        android:hint="@string/confirm_new_pass"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

@@ -26,7 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/welcome_message"
         android:layout_marginTop="80dp"
-        app:srcCompat="@mipmap/securichat_icon"
+        app:srcCompat="@mipmap/encryptachat_icon_round"
         android:contentDescription="@string/app_name" />
 
     <Button

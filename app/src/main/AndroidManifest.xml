@@ -6,11 +6,14 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/securichat_icon"
+        android:icon="@mipmap/encryptachat_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.SecuriChat"
         tools:targetApi="31">
+        <activity
+            android:name=".SettingsPage"
+            android:exported="false" />
         <activity
             android:name=".MessagesPage"
             android:exported="false" />

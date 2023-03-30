@@ -59,4 +59,15 @@
         android:text="@string/logout"
         tools:layout_editor_absoluteX="158dp" />
 
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MessagePageHeader"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="570dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/settings"
+        tools:layout_editor_absoluteX="158dp" />
+
 </RelativeLayout>

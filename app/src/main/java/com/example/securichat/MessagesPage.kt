@@ -3,6 +3,7 @@ package com.example.securichat
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.Settings
 import android.widget.Button
 import android.widget.Toast
 
@@ -30,6 +31,14 @@ class MessagesPage : AppCompatActivity() {
 
         thirdContact.setOnClickListener{
             Toast.makeText(applicationContext, "Opening Message from User 3 ... in the future", Toast.LENGTH_LONG).show()
+        }
+
+        // settings
+        val settingsButton = findViewById<Button>(R.id.settings_button)
+
+        settingsButton.setOnClickListener {
+            val intent = Intent(this, SettingsPage::class.java)
+            startActivity(intent)
         }
 
         // logout

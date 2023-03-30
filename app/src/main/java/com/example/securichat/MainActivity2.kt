@@ -10,12 +10,19 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        val button = findViewById<Button>(R.id.back_button)
+        val backButton = findViewById<Button>(R.id.back_button)
 
-        button.setOnClickListener(){
+        backButton.setOnClickListener {
             //val intent = Intent(this, MainActivity::class.java)
             //startActivity(intent)
             finish()
+        }
+
+        val loginButton = findViewById<Button>(R.id.login_button)
+
+        loginButton.setOnClickListener {
+            val intent = Intent(this, MessagesPage::class.java)
+            startActivity(intent)
         }
     }
 }

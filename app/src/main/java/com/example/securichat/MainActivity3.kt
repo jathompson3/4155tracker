@@ -13,14 +13,14 @@ class MainActivity3 : AppCompatActivity() {
 
         val backButton = findViewById<Button>(R.id.back_button)
 
-        backButton.setOnClickListener(){
+        backButton.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
         val createAccountButton = findViewById<Button>(R.id.create_account_button)
 
-        createAccountButton.setOnClickListener(){
+        createAccountButton.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             Toast.makeText(applicationContext, "Your account has been created.\nPlease Login.", Toast.LENGTH_SHORT).show()
             startActivity(intent)

@@ -6,6 +6,7 @@
     <string name="login_page">Login Page</string>
     <string name="signup">Sign Up</string>
     <string name="back_button">Back</string>
+    <string name="logout">Logout</string>
 
     // login page
     <string name="login">Log In</string>
@@ -17,4 +18,11 @@
     <string name="email">Email Address</string>
     <string name="confirm_pass">Confirm Password</string>
     <string name="create_account">Create Account</string>
+
+    // messages page
+    <string name="messages">Messages</string>
+    <string name="msg_1">Message from: User1</string>
+    <string name="msg_2">Message from: User2</string>
+    <string name="msg_3">Message from: User3</string>
+
 </resources>

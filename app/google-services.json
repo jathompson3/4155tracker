@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "328081952959",
+    "project_id": "encryptachat-98e3e",
+    "storage_bucket": "encryptachat-98e3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328081952959:android:820c22a037a73cfa93760a",
+        "android_client_info": {
+          "package_name": "com.example.securichat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328081952959-aatob708ka7otnneu14u21687cilpn6h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc4oM-AXG7cCorCqZSrWJzxNQQJZGigQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328081952959-aatob708ka7otnneu14u21687cilpn6h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

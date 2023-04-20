@@ -42,24 +42,30 @@ class Registration : AppCompatActivity() {
     }
 
     private fun signUp(name: String, email: String, password: String) {
-         mAuth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    // Sign in success, update UI with the signed-in user's information
-                    addUserToDatabase(name, email, mAuth.currentUser?.uid!!)
-                    val intent = Intent(this@Registration, MainActivity::class.java)
-                    finish()
-                    startActivity(intent)
+        if (name == "") {
+            Toast.makeText(this@Registration, "Name cannot be empty", Toast.LENGTH_SHORT).show()
+        } else if (email == "") {
+            Toast.makeText(this@Registration, "Email cannot be empty", Toast.LENGTH_SHORT).show()
+        } else if (password == "") {
+            Toast.makeText(this@Registration, "Password cannot be empty", Toast.LENGTH_SHORT).show()
+        } else {
+            mAuth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+                        // Sign in success, update UI with the signed-in user's information
+                        addUserToDatabase(name, email, mAuth.currentUser?.uid!!)
+                        val intent = Intent(this@Registration, MainActivity::class.java)
+                        finish()
+                        startActivity(intent)
 
 
-                } else {
-                    // If sign in fails, display a message to the user.
-                    Toast.makeText(this@Registration, "Please enter the correct credentials", Toast.LENGTH_SHORT).show()
+                    } else {
+                        // If sign in fails, display a message to the user.
+                        Toast.makeText(this@Registration, "Please enter the correct credentials", Toast.LENGTH_SHORT).show()
 
+                    }
                 }
-            }
-
-
+        }
     }
 
 private fun addUserToDatabase(name: String, email: String, uid: String) {

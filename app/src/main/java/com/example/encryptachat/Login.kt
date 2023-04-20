@@ -48,17 +48,24 @@ class Login : AppCompatActivity() {
     }
 
     private fun login(email: String, password: String) {
-        mAuth.signInWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    // Sign in success, update UI with the signed-in user's information
-                    val intent = Intent(this@Login, MainActivity::class.java)
-                    finish()
-                    startActivity(intent)
-                } else {
-                    // If sign in fails, display a message to the user.
-                    Toast.makeText(this@Login, "User does not exist", Toast.LENGTH_SHORT).show()
+        if (email == "") {
+            Toast.makeText(this@Login, "Email cannot be empty", Toast.LENGTH_SHORT).show()
+        } else if (email == "") {
+            Toast.makeText(this@Login, "Password cannot be empty", Toast.LENGTH_SHORT).show()
+        } else {
+            mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+                        // Sign in success, update UI with the signed-in user's information
+                        val intent = Intent(this@Login, MainActivity::class.java)
+                        finish()
+                        startActivity(intent)
+                    } else {
+                        // If sign in fails, display a message to the user.
+                        Toast.makeText(this@Login, "User does not exist", Toast.LENGTH_SHORT).show()
+                    }
                 }
-            }
+        }
+
     }
 }

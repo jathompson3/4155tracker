@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "856128583372",
+    "project_id": "encryptachat2",
+    "storage_bucket": "encryptachat2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856128583372:android:5aad3275cca1e26bedf469",
+        "android_client_info": {
+          "package_name": "com.example.encryptachat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856128583372-lmre4vdlckgo7s8htegounjdp5ms5une.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb56lsZiPg8JBKUgTQbthu5AS3bjgNqcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856128583372-lmre4vdlckgo7s8htegounjdp5ms5une.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

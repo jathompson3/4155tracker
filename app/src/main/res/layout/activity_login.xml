@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:background="@color/background">
 
     <ImageView
         android:id="@+id/app_logo"
@@ -12,7 +13,9 @@
         android:layout_height="170dp"
         android:src="@drawable/encryptachat"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"/>
+        android:layout_marginTop="70dp"
+        android:contentDescription="EncryptAChat Logo Image"
+        tools:ignore="HardcodedText" />
 
 
 
@@ -21,12 +24,17 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/app_logo"
-        android:layout_marginTop="10dp"
-        android:hint="Email"
-        android:paddingLeft="13dp"
-        android:background="@drawable/edit_background"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/email"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:autofillHints="email"
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/editPassword"
@@ -34,34 +42,38 @@
         android:layout_height="50dp"
         android:layout_below="@id/editEmail"
         android:layout_marginTop="10dp"
-        android:hint="Password"
-        android:paddingLeft="13dp"
-        android:background="@drawable/edit_background"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:hint="@string/password"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:autofillHints="password"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/editPassword"
-        android:text="Login"
-        android:background="@drawable/button_background"
+        android:text="@string/login"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:background="@drawable/button_background"
+        android:textSize="18sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="30dp"/>
 
     <Button
         android:id="@+id/signupButton"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/loginButton"
-        android:text="Sign Up"
+        android:text="@string/signup"
         android:background="@drawable/button_background"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="20dp"/>
 
 </RelativeLayout>
